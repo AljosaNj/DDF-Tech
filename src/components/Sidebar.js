@@ -10,8 +10,9 @@ import { useUserContext } from '../context/user_context'
 
 const Sidebar = () => {
   const {isSidebarOpen,closeSidebar} = useProductsContext();
- 
-  return <SidebarContainer>
+    const {myUser} = useUserContext()
+  return (
+  <SidebarContainer>
     <aside className={`${isSidebarOpen? 'sidebar show-sidebar' : 'sidebar'}`}>
 <div className="sidebar-header"> 
 <img   src={logo} className="logo" alt="ddf tech"/>
@@ -28,14 +29,18 @@ return (
 </li>
 )
 })}
-<li >
+{myUser && (
+  <li >
 
   <Link to='/checkout' onClick={closeSidebar} >checkout </Link>
 </li>
+)}
+
  </ul>
  <CartButtons/>
     </aside>
   </SidebarContainer>
+  )
 }
 
 const SidebarContainer = styled.div`

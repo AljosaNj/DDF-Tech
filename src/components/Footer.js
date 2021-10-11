@@ -2,7 +2,8 @@ import React from 'react'
 import styled from 'styled-components'
 import { FaFacebook,FaInstagram , FaYoutube } from 'react-icons/fa'
 const Footer = () => {
-  return <Wrapper>
+  return (
+     <Wrapper>
     <h5>
       &copy; {new Date().getFullYear()}
       <span>DDFTech</span>
@@ -14,6 +15,7 @@ const Footer = () => {
       <li><a href='https://www.youtube.com/' target="blank" ><FaYoutube/></a></li>
     </ul>
   </Wrapper>
+  )
 }
 
 const Wrapper = styled.footer`

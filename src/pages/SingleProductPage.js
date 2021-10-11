@@ -15,8 +15,8 @@ import styled from 'styled-components'
 import { Link } from 'react-router-dom'
 
 const SingleProductPage = () => {
-  const {id} = useParams();
-  const history = useHistory();
+  const {id} = useParams()
+  const history = useHistory()
   const {
     single_product_loading: loading,
     single_product_error: error,
@@ -26,14 +26,16 @@ const SingleProductPage = () => {
 
 useEffect(() => {
   fetchSingleProduct(`${url}${id}`)
+  // eslint-disable-next-line
 },[id])
 
 useEffect(() => {
   if(error){
     setTimeout(() => {
-history.push('/')
+      history.push('/')
     },3000)
   }
+  // eslint-disable-next-line
 },[error])
 
 
@@ -43,7 +45,7 @@ if (loading) {
 if(error){
   return <Error/>
 }
-console.log(product)
+
 const {
   name,
   price,

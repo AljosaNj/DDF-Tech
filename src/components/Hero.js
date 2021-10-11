@@ -5,7 +5,8 @@ import heroBcg from '../assets/hero22.jpg'
 import heroBcg2 from '../assets/hero44.jpg'
 
 const Hero = () => {
-  return (<Wrapper className="section-center">
+  return (
+  <Wrapper className="section-center">
 <article className="content">
 <h1>
   choose your <br/>
