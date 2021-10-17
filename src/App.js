@@ -10,15 +10,14 @@ Checkout,
 Error,
 About,
 Products,
-PrivateRoute,
-AuthWrapper,
+
 
 } 
 from './pages'
 
 function App() {
   return (
-    <AuthWrapper>
+   
 
     
     <Router>
@@ -38,16 +37,16 @@ function App() {
            <Products/>
          </Route>
          <Route  exact path='/products/:id' children={<SingleProduct/>}/>
-         <PrivateRoute exact path='/checkout'>
+         <Route exact path='/checkout'>
            <Checkout/>
-         </PrivateRoute>
+         </Route>
          <Route exact path="*">
            <Error/>
          </Route>
        </Switch>
        <Footer/>
     </Router>
-    </AuthWrapper>
+  
   )
   
 }

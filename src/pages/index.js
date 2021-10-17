@@ -5,8 +5,7 @@ import About from './AboutPage'
 import Cart from './CartPage'
 import Error from './ErrorPage'
 import Checkout from './CheckoutPage'
-import PrivateRoute from './PrivateRoute'
-import AuthWrapper from './AuthWrapper'
+
 
 
 export {
@@ -17,6 +16,5 @@ export {
  Cart,
  Error,
  Checkout,
- PrivateRoute,
- AuthWrapper,
+ 
 }
