@@ -1,0 +1,8 @@
+[[redirects]]
+  force = true
+  from = "/api/3-z-complete"
+  status = 200
+  to = "https://serv-react-api.netlify.app/api/3-z-complete"
+
+
+
