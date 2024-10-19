@@ -1,11 +1,10 @@
 
+
 [[redirects]]
-  from = "//api/3-z-complete"
-  to = "https://serv-react-api.netlify.app/api/3-z-complete"
+  from = “/api/*”
+  to = "“https://serv-react-api.netlify.app/api/3-z-complete"
   status = 200
-  force = true
-  headers = {X-From = "Netlify"}
-[[headers]]
-  for = "/*"
-  [headers.values]
-    Access-Control-Allow-Origin = "*"
+[[redirects]]
+  from = “/*”
+  to = “/index.html”
+  status = 200
